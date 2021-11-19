@@ -22,6 +22,16 @@ Create new library for trait.
 cargo new hello_macro --lib
 ```
 
+In library
+
+```rust
+pub trait HelloMacro {
+    fn hello_macro();
+}
+```
+
+In our original file, could add.
+
 ```rust
 use hello_macro::HelloMacro;
 
