@@ -1,1 +1,13 @@
-# lecture-12-notes
+### Example 1
+
+```rust
+use hello_macro::HelloMacro;
+use hello_macro_derive::HelloMacro;
+
+#[derive(HelloMacro)]
+struct Pancakes;
+
+fn main() {
+    Pancakes::hello_macro();
+}
+```
